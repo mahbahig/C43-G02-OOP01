@@ -8,10 +8,10 @@
     #endregion
 
     #region Q3
-    internal enum Season
-    {
-        Spring, Summer, Autumn, Winter
-    }
+    //internal enum Season
+    //{
+    //    Spring, Summer, Autumn, Winter
+    //}
     #endregion
     internal class Program
     {
@@ -40,37 +40,40 @@
             #endregion
 
             #region Q3
-            Console.Write("Enter a season: ");
-            string input = Console.ReadLine();
+            //Console.Write("Enter a season: ");
+            //string input = Console.ReadLine();
 
-            if (Enum.TryParse(input, out Season season))
-            {
-                string range;
-                switch(season)
-                {
-                    case Season.Spring:
-                        range = "march to may";
-                        break;
-                    case Season.Summer:
-                        range = "june to august";
-                        break;
-                    case Season.Autumn:
-                        range = "september to november";
-                        break;
-                    case Season.Winter:
-                        range = "december to february";
-                        break;
-                    default:
-                        range = "invalid season";
-                        break;
-                };
-                Console.WriteLine($"The season is {season} and the range is {range}");
-            }
-            else
-            {
-                Console.WriteLine("Invalid season");
-            }
+            //if (Enum.TryParse(input, out Season season))
+            //{
+            //    string range;
+            //    switch(season)
+            //    {
+            //        case Season.Spring:
+            //            range = "march to may";
+            //            break;
+            //        case Season.Summer:
+            //            range = "june to august";
+            //            break;
+            //        case Season.Autumn:
+            //            range = "september to november";
+            //            break;
+            //        case Season.Winter:
+            //            range = "december to february";
+            //            break;
+            //        default:
+            //            range = "invalid season";
+            //            break;
+            //    };
+            //    Console.WriteLine($"The season is {season} and the range is {range}");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Invalid season");
+            //}
+            #endregion
 
+            #region Q4
+            // مش فاهم السؤال
             #endregion
         }
 
