@@ -13,6 +13,13 @@
     //    Spring, Summer, Autumn, Winter
     //}
     #endregion
+
+    #region Q5
+    internal enum Colors
+    {
+        Red, Green, Blue
+    }
+    #endregion
     internal class Program
     {
         static void Main(string[] args)
@@ -74,6 +81,33 @@
 
             #region Q4
             // مش فاهم السؤال
+            #endregion
+
+            #region Q5
+            Console.Write("Enter a color: ");
+            string input = Console.ReadLine();
+
+            Colors color;
+
+            bool isPresent = false;
+
+            for (int i = 0; i < 3; i++)
+            {
+                color = (Colors)i;
+                if (color.ToString().ToLower() == input.ToLower())
+                {
+                    isPresent = true;
+                    break;
+                }
+
+            }
+            if (isPresent) {
+                Console.WriteLine($"The color {input.ToLower()} is in the enum.");
+            }
+            else
+            {
+                Console.WriteLine("The color is not present in the enum");
+            }
             #endregion
         }
 
