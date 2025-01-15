@@ -111,13 +111,18 @@
             #endregion
 
             #region Q6
-            Console.Write("Enter the x point: ");
-            int x = int.Parse(Console.ReadLine());
-            Console.Write("Enter the y point: ");
-            int y = int.Parse(Console.ReadLine());
+            //Console.Write("Enter the x point: ");
+            //int x = int.Parse(Console.ReadLine());
+            //Console.Write("Enter the y point: ");
+            //int y = int.Parse(Console.ReadLine());
 
-            Point point = new Point(x, y);
-            Console.WriteLine(point.ToString());
+            //Point point = new Point(x, y);
+            //Console.WriteLine(point.ToString());
+            #endregion
+
+            #region Q7
+            Person p1 = new Person("Mahmoud", 20);
+            Console.WriteLine(p1.ToString());
             #endregion
         }
 
