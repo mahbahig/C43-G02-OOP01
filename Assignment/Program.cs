@@ -15,10 +15,10 @@
     #endregion
 
     #region Q5
-    internal enum Colors
-    {
-        Red, Green, Blue
-    }
+    //internal enum Colors
+    //{
+    //    Red, Green, Blue
+    //}
     #endregion
     internal class Program
     {
@@ -84,30 +84,40 @@
             #endregion
 
             #region Q5
-            Console.Write("Enter a color: ");
-            string input = Console.ReadLine();
+            //Console.Write("Enter a color: ");
+            //string input = Console.ReadLine();
 
-            Colors color;
+            //Colors color;
 
-            bool isPresent = false;
+            //bool isPresent = false;
 
-            for (int i = 0; i < 3; i++)
-            {
-                color = (Colors)i;
-                if (color.ToString().ToLower() == input.ToLower())
-                {
-                    isPresent = true;
-                    break;
-                }
+            //for (int i = 0; i < 3; i++)
+            //{
+            //    color = (Colors)i;
+            //    if (color.ToString().ToLower() == input.ToLower())
+            //    {
+            //        isPresent = true;
+            //        break;
+            //    }
 
-            }
-            if (isPresent) {
-                Console.WriteLine($"The color {input.ToLower()} is in the enum.");
-            }
-            else
-            {
-                Console.WriteLine("The color is not present in the enum");
-            }
+            //}
+            //if (isPresent) {
+            //    Console.WriteLine($"The color {input.ToLower()} is in the enum.");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("The color is not present in the enum");
+            //}
+            #endregion
+
+            #region Q6
+            Console.Write("Enter the x point: ");
+            int x = int.Parse(Console.ReadLine());
+            Console.Write("Enter the y point: ");
+            int y = int.Parse(Console.ReadLine());
+
+            Point point = new Point(x, y);
+            Console.WriteLine(point.ToString());
             #endregion
         }
 
