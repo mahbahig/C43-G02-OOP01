@@ -121,8 +121,30 @@
             #endregion
 
             #region Q7
+            //Person p1 = new Person("Mahmoud", 20);
+            //Console.WriteLine(p1.ToString());
+            #endregion
+
+            #region Q8
             Person p1 = new Person("Mahmoud", 20);
-            Console.WriteLine(p1.ToString());
+            Person p2 = new Person("Ahmed", 50);
+            Person p3 = new Person("Ibraim", 21);
+
+            Person[] people = { p1, p2, p3 };
+            int[] ages = { p1.Age, p2.Age, p3.Age };
+
+            int maxAge = 0;
+            int maxAgeIndex = -1;
+
+            for (int i = 1; i < ages.Length; i++)
+            {
+                if (ages[i] > maxAge)
+                {
+                    maxAge = ages[i];
+                    maxAgeIndex = i;
+                }
+            }
+            Console.WriteLine(people[maxAgeIndex].ToString());
             #endregion
         }
 
